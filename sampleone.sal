@@ -1,3 +1,9 @@
 to find the highest sal:
 select * from emp where sal in 9select max(sal) from emp)
 
+
+
+to find list of manager:
+---------------------------------
+select * from emp where empno in (select mgr from emp)
+
